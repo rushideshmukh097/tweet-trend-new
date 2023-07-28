@@ -57,7 +57,7 @@ pipeline {
             }
         }
 
-        stage (" Docker Publish "){
+        stage (" Docker Image publish to Jfrog  "){
             steps {
                 script {
                     echo '<--------------- Docker Publish Started --------------->'  
@@ -68,7 +68,7 @@ pipeline {
                 }
             }
         }
-        stage ("deploy") {
+        stage ("App deploy by Kubernetes") {
             steps {
                 script {
                     sh './deploy.sh'
