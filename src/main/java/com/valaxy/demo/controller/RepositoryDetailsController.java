@@ -34,11 +34,7 @@ public class RepositoryDetailsController {
 	public String getRepos() throws IOException {
 		GitHub github = new GitHubBuilder().withPassword("valaxytech@gmail.com", "XXXXXXXX").build();
 		GHRepositorySearchBuilder builder = github.searchRepositories();
-		return "DevOps engineer with 3.5+ years of relevant industrial experience in DevOps and AWS Cloud. I am looking
-forward to work in an organization, which provides the environment for growth with competent and strong
-leaders in AWS Cloud services and DevOps Ideology and skills such as Kubernetes, Python, Jenkins, Ansible, GIT, Docker,
-Terraform, CI/CD Pipeline Automation. I have an urge and inclination for learning new technologies, a strong
-work ethic combined with a commitment to excellence in all projects undertaken.";
+		return "DevOps engineer with 3.5+ years of relevant industrial experience in DevOps & AWS cloud Services";
 	}
 
 	@GetMapping("/trends")
